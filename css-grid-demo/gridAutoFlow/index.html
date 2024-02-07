@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='../style.css'>
+</head>
+<style>
+    .container {
+        height: 300px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-auto-flow: row; */
+        /* grid-auto-flow: column dense; */
+        grid-auto-flow: dense;
+    }
+    .child {
+        border: 1px solid red;
+        padding: 4px;
+    }
+    .child1 {
+        border: 1px solid #990;
+        background-color: #8909;
+        grid-row-start: 2;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="child1">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+    </div>
+</body>
+</html>

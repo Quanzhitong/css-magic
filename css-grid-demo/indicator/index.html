@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Document</title> 
+</head>
+<style>
+    body {
+        font-size: 14px;
+    }
+    .container {
+        display: grid; 
+        width: 960px;
+        border: 1px solid #900;
+        grid-template-columns: 130px 1fr;
+    }
+    .title {
+        background-color: #F3F3F3;
+        line-height: 35px;
+        /*居中*/
+        display: grid;
+        place-items: center;
+    }
+    .fieldAndSource {
+        background-color: #F3F3F3;
+        line-height: 35px;
+        display: grid; 
+        grid-template-columns: 1fr 1.2fr;
+    }
+    /* dom流 不用处理*/
+    .project div {
+        line-height: 35px;
+        text-align: center;
+        border-right: 1px solid #900;
+    }
+
+    .project div:hover {
+        background-color: #E6F7FF;
+        cursor: pointer;
+    }
+    .item {
+        line-height: 35px;
+    }
+
+    /* 再次 grid */
+    .item-child {
+        padding-left: 12px;
+        display: grid; 
+        grid-template-columns: 1fr 1.2fr;
+        border-bottom: 1px solid #900;
+    }   
+    
+</style>
+<body>
+    <div class="container">
+        <div class="title">项目</div>
+        <div class="fieldAndSource">
+            <div class="item-title">字段</div>
+            <div class="item-title">来源</div>
+        </div>
+        <div class="project">
+            <div>销售额相关</div>
+            <div>客单价相关</div>
+            <div>成功率相关</div>
+            <div>工作量相关</div>
+        </div>
+        <div class="item">
+            <div class="item-child">
+                <div>个人销售占比</div>
+                <div>来源信息来源信息来源信息来源信息来源信息来源信息来源信息</div>
+            </div>
+            <div class="item-child">
+                <div>销售人数</div>
+                <div>来源信息来源信息来源信息来源信息来源信息来源信息来源信息</div>
+            </div>
+            <div class="item-child">
+                <div>销售订单数</div>
+                <div>来源信息来源信息来源信息来源信息来源信息来源信息来源信息</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

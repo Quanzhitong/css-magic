@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Document</title> 
+    <link rel="stylesheet" href='../style.css'>
+</head>
+<style>
+    .container {
+        display: grid; 
+        height: 300px;
+        width: 200px;
+        grid-template-columns:  1fr 2fr 1fr;
+        /* grid-template-columns:  25% 50% 25%; */
+    }
+    .child {
+        border: 1px solid red;
+        padding: 4px;
+    }
+
+    .inner {
+        background-color: #909;
+        width: 60px;
+        height: 60px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="child">1
+            <div class="inner">里边</div>
+        </div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+    </div>
+</body>
+</html>

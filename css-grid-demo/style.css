@@ -1,0 +1,8 @@
+.container {
+    border: 1px solid black;
+    width: 300px;
+}
+
+.header, .nav, .main, .footer, .child{
+    border: 1px solid red;
+}

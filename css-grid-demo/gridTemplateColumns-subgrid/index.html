@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Document</title> 
+    <link rel="stylesheet" href='../style.css'>
+</head>
+<style>
+    .container {
+        display: grid; 
+        height: 300px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+    .child {
+        border: 1px solid red;
+        padding: 4px;
+    }
+    .child1 {
+        border: 1px solid #909;
+        display: grid;
+        grid-template-columns: subgrid;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+   .grandson {
+     background-color: #909090;
+     border: 1px solid #000;
+   }
+</style>
+<body>
+    <div class="container">
+        <div class="child1">
+            <div class="grandson">grandson1</div>
+            <div class="grandson">grandson2</div>
+            <div class="grandson">grandson3</div>
+        </div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+    </div>
+</body>
+</html>

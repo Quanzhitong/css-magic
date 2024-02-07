@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='../style.css'>
+</head>
+<style>
+    .container {
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+        grid-template-areas: 'header header header header'
+                             'nav main main main'
+                             'nav main main main'
+                             'footer footer footer footer';
+        gap: 2px;
+    }
+    .header {
+        grid-area: header;
+    }
+    .nav {
+        grid-area: nav;
+    }
+    .main {
+        grid-area: main;
+    }
+    .footer {
+        grid-area: footer;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="nav">nav</div>
+        <div class="main">Main</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
